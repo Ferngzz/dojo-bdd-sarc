@@ -1,12 +1,19 @@
 package cepes.itacademy.sarc.domain;
 
-public class Funcionario {
-    private String matricula;
-    private String nome;
+import java.time.LocalDate;
 
-    public Funcionario(String matricula, String nome){
+public class Funcionario {
+    private final String matricula;
+    private String nome;
+    private String cargo;
+    private final LocalDate admissao;
+
+    public Funcionario(String matricula, String nome, String cargo, LocalDate admissao){
         this.matricula = matricula;
         this.nome = nome;
+        this.cargo = cargo;
+        this.admissao = admissao;
+
     }
 
     public String getMatricula() {
@@ -17,12 +24,20 @@ public class Funcionario {
         return nome;
     }
 
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getCargo(){
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public LocalDate getAdmissao(){
+        return admissao;
     }
 
 }
