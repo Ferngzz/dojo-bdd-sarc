@@ -2,20 +2,20 @@ package cepes.itacademy.sarc.domain;
 
 import java.time.LocalDate;
 
-public class Notebook extends Recurso {
+public class Notebook extends Resource {
 
-    private final LocalDate aquisicao;
-    private String descricao;
+    private final LocalDate acquisition;
+    private String description;
 
-    public Notebook(String patrimonio, LocalDate aquisicao, String descricao) {
-        super(patrimonio);
-        this.aquisicao = aquisicao;
-        this.descricao = descricao;
+    public Notebook(String id, LocalDate acquisition, String description) {
+        super(id);
+        this.acquisition = acquisition;
+        this.description = description;
     }
 
-    public LocalDate getAquisicao() {return aquisicao;}
+    public LocalDate getAcquisition() {return acquisition;}
 
-    public String getDescricao() {return descricao;}
+    public String getDescription() {return description;}
 
-    public void setDescricao(String descricao) {this.descricao = descricao;}
+    public void setDescription(String description) {this.description = description;}
 }

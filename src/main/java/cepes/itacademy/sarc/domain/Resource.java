@@ -1,9 +1,9 @@
 package cepes.itacademy.sarc.domain;
 
-public abstract class Recurso {
+public abstract class Resource {
     private final String id;
 
-    public Recurso(String id) {
+    public Resource(String id) {
         this.id = id;
     }
 
