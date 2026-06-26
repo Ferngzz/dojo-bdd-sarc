@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 
 public class InMemoryAllocationRepository implements AllocationRepository {
     private final List<Allocation> allocations = new ArrayList<>();
-
     @Override
     public void saveAllocation(Allocation allocation) {
         allocations.add(allocation);
